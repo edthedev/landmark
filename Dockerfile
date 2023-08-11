@@ -11,3 +11,4 @@ EXPOSE 5000
 
 # gunicorn -b 0.0.0.0:5000 'app:app'
 CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
+# Hint: visit http://127.0.0.1:5000
