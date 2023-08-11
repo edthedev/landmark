@@ -1,1 +1,1 @@
-docker run -p 5000:5000 -it landmark bash
+docker run -p 0.0.0.0:5000:5000 -it landmark bash
