@@ -9,4 +9,5 @@ RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
 
-CMD [ "flask", "run", "-h", "0.0.0.0", "-p", "5000"]
+# gunicorn -b 0.0.0.0:5000 'app:app'
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
